@@ -1,0 +1,12 @@
+version: '3'
+services:
+    rest-number:
+        image: 'joheiss/rest-number:1.0.0-SNAPSHOT'
+        ports:
+            - '8071:8071'
+    rest-books:
+        image: 'joheiss/rest-books:1.0.0-SNAPSHOT'
+        ports:
+            - '8072:8072'
+        environment:
+            - NUMBER_PROXY_MP_REST_URL=http://rest-number:8071

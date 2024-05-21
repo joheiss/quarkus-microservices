@@ -1,0 +1,13 @@
+@baseurl = http://localhost:8072
+@api = /api/v1
+
+POST {{baseurl}}/{{api}}/books
+Content-Type: application/json
+
+{
+    "title": "The Ultimate Post",
+    "author": "Jo Heiss",
+    "genre": "IT",
+    "year_of_publication": 2024
+}
+

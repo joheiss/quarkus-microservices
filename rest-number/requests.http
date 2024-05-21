@@ -1,0 +1,11 @@
+@baseurl = http://localhost:8071
+@api = api/v1
+
+GET {{baseurl}}/q/openapi
+Accept: application/json
+
+###
+
+GET {{baseurl}}/{{api}}/numbers
+
+###
